@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="enTeteClimat.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul id="toolbar">
-                <li>Home</li>
-                <li>Contact </li>
-                <li>About </li>
-                <li> Version épuré</li>
-            </ul>
-        </nav>
-    </header>
-    <section id="EnTeteClimat">
-        <a href=""></a>
-        <p id="introduction">Le climat est la distribution statistique des conditions de l'atmosphère terrestre dans une région donnée pendant une période donnée. Il se distingue de la météorologie qui désigne l'étude du temps à échelle courte (jusqu'à quelques jours) et à petite échelle géographique. Le climat, à l'inverse, correspond à des données agrégées sur des périodes plus longues et à une échelle géographique plus grande. Le climat est influencé par des facteurs géographiques (latitude, altitude, continent, océan, etc.), astronomiques (saisons, cycles de Milanković, etc.), biogéochimiques (effet de serre, aérosols, etc.) et anthropiques (effet de serre, etc.).</p>
-        <p id="transitionQuestionReponse">Maintenant passons à petit QUIZ</p>
-    </section>
-    <section id="QuestionReponse">
-        <a href=""></a>
-        <p id=""></p>
-        <p id="transitionVieQuotidienne">Calculons maintenat votre impact sur le climat</p>
-    </section>
-    <section id="VieQuotidienne">
-        <a href=""></a>
-        <p id="transition"></p>
-    </section>
+<header>
+    <nav>
+        <ul id="toolbar">
+            <li>Home</li>
+            <li>Contact </li>
+            <li>About </li>
+            <li> Version épuré</li>
+        </ul>
+    </nav>
+</header>
+<section id="introduction">
+
+    <h1>Le climat</h1>
+    <!--<h2>&ldquo;Le climat représente les conditions météorologiques moyennes sur une longue période dans une région donnée, englobant les variations de température, d'humidité, de vent et de précipitations."</h2>
+    --><h2>&ldquo;Le climat est l'artiste invisible qui compose la symphonie des saisons, jouant avec les humeurs de la nature pour créer l'harmonie ou la tempête."</h2>
+</section>
+<section id="EnTeteClimat">
+    <a href=""></a>
+    <p id="transitionQuestionReponse">Maintenant passons à un petit QUIZ</p>
+
+    <div id="question">
+    </div>
+    <div id="box-choix">
+        <button class="choix" onclick="changerTaille()" data-valeur="true"></button>
+        <button class="choix" onclick="changerTaille()"></button>
+    </div>
+    <p id="reponse"></p>
+
+</section>
+<section id="QuestionReponse">
+    <a href=""></a>
+    <p id=""></p>
+    <p id="transitionVieQuotidienne">Calculons maintenat votre impact sur le climat</p>
+</section>
+<section id="VieQuotidienne">
+    <a href=""></a>
+    <p id="transition"></p>
+</section>
+<script src="enTeteClimat.js"></script>
 </body>
 </html>
