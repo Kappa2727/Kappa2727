@@ -17,30 +17,34 @@
         </ul>
     </nav>
 </header>
-<section id="introduction">
 
+<section id="introduction">
+    <img src="./images/fondEcran.png"></img>
     <h1>Le climat</h1>
     <!--<h2>&ldquo;Le climat représente les conditions météorologiques moyennes sur une longue période dans une région donnée, englobant les variations de température, d'humidité, de vent et de précipitations."</h2>
     --><h2>&ldquo;Le climat est l'artiste invisible qui compose la symphonie des saisons, jouant avec les humeurs de la nature pour créer l'harmonie ou la tempête."</h2>
 </section>
 <section id="EnTeteClimat">
-    <a href=""></a>
-    <p id="transitionQuestionReponse">Maintenant passons à un petit QUIZ</p>
+
+    <p id="transitionQuestionReponse">Maintenant passons a un petit QUIZ</p>
 
     <div id="question">
     </div>
     <div id="box-choix">
-        <button class="choix" onclick="changerTaille()" data-valeur="true"></button>
-        <button class="choix" onclick="changerTaille()"></button>
+        <button class="choix" onclick="afficherReponse()"></button>
+        <button class="choix" onclick="afficherReponse()"></button>
     </div>
-    <p id="reponse"></p>
-
+    <div id="div-reponse">
+        <p id="reponse"></p>
+        <button id="button-reponse" onclick="questionSuivante()">suivant</button>
+    </div>
 </section>
 <section id="QuestionReponse">
     <a href=""></a>
     <p id=""></p>
-    <p id="transitionVieQuotidienne">Calculons maintenat votre impact sur le climat</p>
+    <p id="transitionVieQuotidienne">Calculons maintenant votre impact sur le climat</p>
 </section>
+
 <section id="VieQuotidienne">
     <a href=""></a>
     <p id="transition"></p>
