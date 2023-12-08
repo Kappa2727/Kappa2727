@@ -5,7 +5,6 @@ let reponse = document.getElementById('reponse');
 let buttonReponse = document.getElementById('button-reponse');
 let divReponse = document.getElementById("div-reponse");
 let reponseDonnee = false;
-
 let indice = 0;
 let dataQuiz = [
     {
