@@ -1,0 +1,107 @@
+body, html {
+  margin: 0;
+  font-family: "Secular One", sans-serif;
+  background-color: black;
+  color: whitesmoke;
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+}
+#introduction > h1 {
+  margin: auto;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+#introduction > h2 {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+#EnTeteClimat {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+#EnTeteClimat #transitionQuestionReponse {
+  grid-column: 3/9;
+  font-size: 2rem;
+}
+#EnTeteClimat #question {
+  grid-column: 4/10;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+#EnTeteClimat #box-choix {
+  grid-column: 4/10;
+  display: flex;
+  justify-content: space-between;
+}
+#EnTeteClimat #box-choix .choix {
+  margin-left: 10%;
+  background: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  border-color: whitesmoke;
+  transition: all 0.4s;
+}
+#EnTeteClimat #box-choix .choix:hover {
+  cursor: pointer;
+}
+#EnTeteClimat #reponse {
+  grid-column: 4/10;
+  font-size: 1.5rem;
+  transition: height 0.4s;
+  width: 80%;
+}
+#EnTeteClimat #div-reponse {
+  grid-column: 4/10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 0px;
+  overflow-y: hidden;
+  transition: all 0.4s;
+}
+#EnTeteClimat #div-reponse #button-reponse {
+  height: 50px;
+  width: 140px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: none;
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+#EnTeteClimat #div-reponse #button-reponse:hover {
+  cursor: pointer;
+}
+
+#QuestionReponse {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+#QuestionReponse #transitionVieQuotidienne {
+  grid-column: 3/9;
+  font-size: 2rem;
+}
+
+.background {
+  background-image: url("images/Quiz.png");
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/*# sourceMappingURL=enTeteClimat.css.map */

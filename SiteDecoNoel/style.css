@@ -1,0 +1,106 @@
+body{
+    background: transparent url("images/bg.gif") repeat scroll 0 0;
+    scroll-behavior: smooth;
+}
+
+.col-md-2, .col-md-8, .col-md-12, .row{
+    margin: 0;
+}
+
+.haut{
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color : #FFFFF2;
+}
+
+.logo{
+    max-width: 150px;
+}
+
+.flocon{
+    background-color: #FFFFF2;
+    border-radius : 50%;
+    position : absolute;
+}
+
+.candy{
+    position: absolute;
+    filter: hue-rotate(195deg);
+    -webkit-filter: hue-rotate(195deg);
+    -moz-filter: hue-rotate(195 deg);
+}
+
+.bloc-texte{
+    font-family: 'Afacad', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    color : #FFFFF2;
+    vertical-align: middle;
+}
+
+.bloc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.etoile img:hover{
+    position: relative;
+    animation: tourner 1s infinite;
+}
+
+/* Animation */
+@keyframes tourner {
+    0% {
+        transform: rotate(0);
+    }
+
+    50%{
+        transform: rotate(180);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+.justePour:hover {
+    cursor: pointer;
+}
+
+#couteau{
+    cursor: url("images/couteaux.png"),default;
+}
+
+.cadeau figure:hover img{
+
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation: tournercadeau 1s infinite;
+
+}
+
+.cadeau img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Animation */
+@keyframes tournercadeau {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+
+}
+

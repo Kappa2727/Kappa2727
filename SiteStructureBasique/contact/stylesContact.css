@@ -1,0 +1,25 @@
+#contacts-list {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+body {
+    font-family: 'Secular One', sans-serif;
+    background-image : url("../images/Quiz.png");
+    color: whitesmoke;
+}
+
+.contact {
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact h3 {
+    margin: 0;
+}
+
+.contact p {
+    margin: 5px 0;
+}

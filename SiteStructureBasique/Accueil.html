@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function redirigeversSiteDeNoel() {
+            window.location.href = "../SiteDecoNoel/index.html";
+        }
+
+        function redirigeversSiteDeProgFonc() {
+            window.location.href = "../ProgFonction/main.html";
+        }
+
+        function redirigeversSitePython() {
+            window.location.href = "../Python/index.html";
+        }
+
+    </script>
+    <link rel="stylesheet" href="enTeteClimat.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap">
+    <link rel="stylesheet" href="styleHeaders.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="toolbar">
+            <li>
+                <div>Home</div>
+            </li>
+            <li>
+                <div onclick="redirigeversSiteDeNoel()"> Noël </div>
+            </li>
+            <li>
+                <div onclick="redirigeversSiteDeProgFonc()"> Fonctionnel</div>
+            </li>
+            <li>
+                <div onclick="redirigeversSitePython()"> Python</div>
+            </li>
+        </ul>
+        <div class="gradient-border">
+            <!-- Contenu -->
+        </div>
+    </nav>
+</header>
+<img src="images/fondEcran.png">
+<div class="gradient-border">
+    <!-- Contenu -->
+</div>
+<div class="background">
+    <section id="introduction">
+        <h1>Le climat</h1>
+        <!--<h2>&ldquo;Le climat représente les conditions météorologiques moyennes sur une longue période dans une région donnée, englobant les variations de température, d'humidité, de vent et de précipitations."</h2>
+        --><h2>&ldquo;Le climat est l'artiste invisible qui compose la symphonie des saisons, jouant avec les humeurs de la nature pour créer l'harmonie ou la tempête."</h2>
+        <div class="gradient-border">
+            <!-- Contenu -->
+        </div>
+    </section>
+    <section id="EnTeteClimat">
+
+        <p id="transitionQuestionReponse">Maintenant passons a un petit QUIZ</p>
+
+        <div id="question">
+        </div>
+        <div id="box-choix">
+            <button class="choix" onclick="afficherReponse()"></button>
+            <button class="choix" onclick="afficherReponse()"></button>
+        </div>
+        <div id="div-reponse">
+            <p id="reponse"></p>
+            <button id="button-reponse" onclick="questionSuivante()">suivant</button>
+        </div>
+    </section>
+    <div class="gradient-border">
+        <!-- Contenu -->
+    </div>
+    <section id="QuestionReponse">
+        <a href=""></a>
+        <p id=""></p>
+        <p id="transitionVieQuotidienne">Calculons maintenant votre impact sur le climat</p>
+    </section>
+
+    <section id="VieQuotidienne">
+        <p> Mais l'important, c'est vous et votre empreinte environnmental </p> <br />
+        <p>Mais d'ailleurs, qu'elle etais-elle ? Calculons-ca ! </p>
+        </p>
+        <label for="estimationCO2"> A combien vous l'estimerez en kg de CO2 par l'utilisation de la voiture
+            ? </label> <br />
+        <input type="number" id="estimationCO2" name="estimationCO2">
+
+        <p> Tres bien, a présent, place au calcul !</p>
+        <label for="moyenneKm">Distance moyenne parcourue : </label>
+        <input type="number" id="moyenneKm" name="moyenneKm">
+
+        <br />
+
+        <label for="carburantType">Type de carburant :</label>
+        <select id="carburantType" name="carburantType">
+            <option value="Diesel">Diesel</option>
+            <option value="Essence">Essence</option>
+            <option value="Ethanol">Ethanol</option>
+        </select>
+        <br />
+
+        <label for="consommationCarburant">consommation par litre au 100km : </label>
+        <input type="number" id="consommationCarburant" name="consommationCarburant">
+
+        <br />
+
+        <button onclick="multiplyNumbers()">Calculez votre empreinte carbonne automobile </button>
+
+        <p>votre empreinte carbonne est de : <span id="resultat"></span></p>
+    </section>
+</div>
+
+<script src="enTeteClimat.js"></script>
+</body>
+</html>

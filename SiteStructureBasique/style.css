@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-size: 25px;
+}
+
+label {
+    margin-top: 40px;
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border: none;
+    outline: none;
+}

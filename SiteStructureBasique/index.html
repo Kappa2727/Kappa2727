@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap">
+</head>
+
+<body>
+    <p> Mais l'important, c'est vous et votre empreinte environnmental </p> <br />
+    <p>Mais d'ailleurs, qu'elle etais-elle ? Calculons-ca ! </p>
+    </p>
+    <label for="estimationCO2"> A combien vous l'estimerez en kg de CO2 par l'utilisation de la voiture
+        ? </label> <br />
+    <input type="number" id="estimationCO2" name="estimationCO2">
+
+    <p> Tres bien, a présent, place au calcul !</p>
+    <label for="moyenneKm">Distance moyenne parcourue : </label>
+    <input type="number" id="moyenneKm" name="moyenneKm">
+
+    <br />
+
+    <label for="carburantType">Type de carburant :</label>
+    <select id="carburantType" name="carburantType">
+        <option value="Diesel">Diesel</option>
+        <option value="Essence">Essence</option>
+        <option value="Ethanol">Ethanol</option>
+    </select>
+    <br />
+
+    <label for="consommationCarburant">consommation par litre au 100km : </label>
+    <input type="number" id="consommationCarburant" name="consommationCarburant">
+
+    <br />
+
+    <button onclick="multiplyNumbers()">Calculez votre empreinte carbonne automobile </button>
+
+    <p>La valeur de la variable est : <span id="resultat"></span></p>
+</body>
+
+</html>
